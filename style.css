@@ -191,7 +191,7 @@ section {
 }
 
 .home-content p {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   position: relative;
   font-size: 1.6rem;
   margin: 2rem 0 4rem;
@@ -438,7 +438,7 @@ span {
 }
 
 .about-content p {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-size: 1.6rem;
   margin: 2rem 0 3rem;
 }
@@ -528,12 +528,7 @@ span {
   align-items: self-start;
 }
 
-.swiper-slide a {
-  /* border: 2px solid red; */
-}
-
 .swiper-slide-active {
-  /* filter: blur(0px); */
   opacity: 1;
 }
 
@@ -674,9 +669,6 @@ span {
 .btn-box button:hover::before {
   width: 100%;
 }
-
-
-
 /* button css setup finish */
 .contact .heading {
   margin-top: -3rem;
@@ -689,98 +681,77 @@ span {
   padding-bottom: 5em;
 }
 
-.contact form{
+.contact form {
   max-width: 70rem;
   margin: 0 auto;
   text-align: center;
 }
 
-.contact form .input-box{
+.contact form .input-box {
   position: relative;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-.contact form .input-box .input-field{
+.contact form .input-box .input-field {
   position: relative;
   width: 49%;
-  margin: .8rem 0;
+  margin: 0.8rem 0;
 }
 
 .contact form .input-box .input-field input,
-.contact form .textarea-field textarea{
+.contact form .textarea-field textarea {
   width: 100%;
   height: 100%;
   padding: 1.5rem;
   font-size: 1.6rem;
   color: var(--text-color);
   background: transparent;
-  border-radius: .6rem;
-  border: .2rem solid var(--main-color);
+  border-radius: 0.6rem;
+  border: 0.2rem solid var(--main-color);
 }
 
 .contact form .input-box .input-field input::placeholder,
-.contact form .textarea-field textarea::placeholder{
-    color: var(--text-color);
+.contact form .textarea-field textarea::placeholder {
+  color: var(--text-color);
 }
 
-.contact form .focus{
+.contact form .focus {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background: var(--bg-color);
-  border-radius: .6rem;
+  border-radius: 0.6rem;
   z-index: -1;
-  transition: .5s;
+  transition: 0.5s;
 }
 
-.contact form .input-box .input-field input:focus~.focus, 
-.contact form .input-box .input-field input:valid~.focus{
+.contact form .input-box .input-field input:focus ~ .focus,
+.contact form .input-box .input-field input:valid ~ .focus {
   width: 100%;
 }
 
-
-.contact form .textarea-field{
+.contact form .textarea-field {
   position: relative;
-  margin: .8rem 0 2.7rem;
+  margin: 0.8rem 0 2.7rem;
   display: flex;
   height: 220px;
 }
 
-.contact form .textarea-field textarea{
+.contact form .textarea-field textarea {
   resize: none;
 }
 
-.contact form .btn-box.btns .btn{
+.contact form .btn-box.btns .btn {
   resize: none;
 }
 
-.contact form .btn-box.btns .btn{
+.contact form .btn-box.btns .btn {
   cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* KEYFRAMES ANIMATION */
 
