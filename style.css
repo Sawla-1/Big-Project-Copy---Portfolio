@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
-
 *{
   margin: 0;
   padding: 0;
@@ -23,12 +22,17 @@
 html{
   font-size: 62.5%;
   overflow-x: hidden;
+
+  scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y mandatory;
 }
 
 body{
   background: #081b29;
   color: #ededed;
 }
+
 
 .header{
   position: fixed;
@@ -83,10 +87,14 @@ body{
 }
 
 /* Home Section  */
+
+/* Start Snap Scroll */
 section {
   min-height: 100vh;
   padding: 10rem 9% 2rem;
+  scroll-snap-align: start;
 }
+
 .home{
   height: 100vh;
   background: url(img/Artboard\ 1.png) no-repeat;
@@ -383,7 +391,6 @@ section {
 
 .about .heading{
   font-size: 5rem;
-  /* margin-bottom: 3rem; */
   text-align: center;
 }
 
@@ -489,6 +496,7 @@ span{
 /* for my projects one, two, three, four*/
 
 .projects .heading{
+  padding-top: 1rem;
   font-size: 5rem;
   margin-bottom: -3rem;
   text-align: center;
@@ -633,11 +641,6 @@ span{
       no-repeat 50% 50% / cover;
 }
 
-.swiper-slide--five {
-  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-      no-repeat 50% 50% / cover;
-}
-
 .swiper-3d .swiper-slide-shadow-left,
 .swiper-3d .swiper-slide-shadow-right {
   background-image: none;
@@ -725,3 +728,6 @@ span{
     transform: translate(-50%, -50%) rotate(360deg);
   }
 }
+
+
+
